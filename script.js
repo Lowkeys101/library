@@ -121,7 +121,8 @@ function addEventListenersToButtons() {
         const authorField = document.querySelector("#author");
         const pagesField = document.querySelector("#pages");
         const readField = document.querySelector("input[name='read']:checked");
-        let book = new Book(titleField.value, authorField.value, pagesField.value, readField.value);
+        let readValue = readField.value.toLowerCase() === "yes" ? true : false;
+        let book = new Book(titleField.value, authorField.value, pagesField.value, readValue);
         myLibrary.push(book);
 
         table.textContent = "";
