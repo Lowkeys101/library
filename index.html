@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+        <button class="new-book">New Book</button>
+        <div class="table-container"></div>
+        <div class="form-container hidden">
+            <h2>
+                Add new book
+            </h2>
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="author" placeholder="Author">
+            <input type="number" id="pages" placeholder="Pages" min="0">
+            <p>Read Book?</p>
+            <div>
+                <label for="yes">
+                    <input type="radio" id="yes" name="read" value="yes" checked="checked">Yes
+                </label>
+                <label for="no">
+                    <input type="radio" id="no" name="read" value="no">No
+                </label>
+            </div>
+             <div>
+                 <button class="submit">Submit</button>
+                 <button class="return">Return</button>
+             </div>
+        </div>
+    </main>
+    
+</body>
+</html>
