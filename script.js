@@ -5,14 +5,17 @@ const form = document.querySelector(".form-container");
 container.appendChild(table);
 
 
-let Book = function (title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+class Book {
 
-    this.info = function () {
-        if (read) {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+
+    info() {
+        if (this.read) {
             return `${this.title} by ${this.author}, ${this.pages} pages, already read`;
         } else {
             return `${this.title} by ${this.author}, ${this.pages} pages, not read yet`;
